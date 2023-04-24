@@ -112,7 +112,7 @@ if(isset($_POST['order'])){
          </div>
          <div class="inputBox">
             <span>payment method :</span>
-            <select name="method" class="box" required>
+            <select name="payment" class="box" required>
                <option value="cash on delivery">cash on delivery</option>
                <option value="credit card">credit card</option>
                <option value="paytm">paytm</option>
@@ -149,14 +149,21 @@ if(isset($_POST['order'])){
             <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
          </div>
       </div>
+      
+      <?php $methods = $_POST['payment'];
+      if($methods == "paypal"){?>
+         <a href="https://www.paypal.com/in/home"><input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order"></a>
+      <?php
+      }
+      if($methods == "paytm"){?>
+          <a  href="https://paytm.com/"><input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
 
-      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
-
+      <?php } ?>
    </form>
 
 </section>
 
-
+ 
 
 
 
