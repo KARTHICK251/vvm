@@ -111,18 +111,8 @@ if(isset($_POST['order'])){
             <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>payment method :</span>
-            <select name="payment" class="box" required>
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
-            </select>
-         </div><div class="inputBox">
-            <h1>Payment Gateway Links : <h1>
-            <span><a href="https://www.paypal.com/in/home">paypal</a><span><br>
-            <span><a href="https://paytm.com/">Paytm</a><span><br>
-            <span><a href="https://www.hdfcbank.com/personal/pay/money-transfer">credit card</a><span><br>
+            <span><br><br>payment method : Cash on delivery</br></span>
+            
          </div>
          <div class="inputBox">
             <span>address line 01 :</span>
@@ -150,15 +140,8 @@ if(isset($_POST['order'])){
          </div>
       </div>
       
-      <?php $methods = $_POST['payment'];
-      if($methods == "paypal"){?>
-         <a href="https://www.paypal.com/in/home"><input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order"></a>
-      <?php
-      }
-      if($methods == "paytm"){?>
-          <a  href="https://paytm.com/"><input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
-
-      <?php } ?>
+      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order"></a>
+ 
    </form>
 
 </section>
