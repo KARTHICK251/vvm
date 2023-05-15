@@ -66,8 +66,8 @@ section {
 .delete-btn,
 .option-btn {
     display: block;
-    width: 100%;
-    margin-top: 1rem;
+    width: 50%;
+    margin: 0.5rem auto;
     border-radius: .5rem;
     padding: 1rem 3rem;
     font-size: 1.7rem;
@@ -103,9 +103,9 @@ section {
 .message {
     position: sticky;
     top: 0;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    background-color: var(--light-bg);
+    background-color: var(--red);
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -121,7 +121,7 @@ section {
 
 .message i {
     cursor: pointer;
-    color: var(--red);
+    color: var(--black);
     font-size: 2.5rem;
 }
 
@@ -592,8 +592,8 @@ section {
 .form-container form {
     background-color: var(--white);
     padding: 2rem;
-    border-radius: .5rem;
-    border: var(--border);
+    border-radius: 1rem;
+    /* border: var(--border); */
     box-shadow: var(--box-shadow);
     text-align: center;
     margin: 0 auto;
