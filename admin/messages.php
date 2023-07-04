@@ -38,7 +38,7 @@ if(isset($_GET['delete'])){
 
 <section class="contacts">
 
-<h1 class="heading">messages</h1>
+<h1 class="heading">Messages</h1>
 
 <div class="box-container">
 
@@ -49,11 +49,11 @@ if(isset($_GET['delete'])){
          while($fetch_message = $select_messages->fetch(PDO::FETCH_ASSOC)){
       ?>
       <div class="box">
-      <p> user id : <span><?= $fetch_message['user_id']; ?></span></p>
-      <p> name : <span><?= $fetch_message['name']; ?></span></p>
-      <p> email : <span><?= $fetch_message['email']; ?></span></p>
-      <p> number : <span><?= $fetch_message['number']; ?></span></p>
-      <p> message : <span><?= $fetch_message['message']; ?></span></p>
+      <p> User Id : <span><?= $fetch_message['user_id']; ?></span></p>
+      <p> Name : <span><?= $fetch_message['name']; ?></span></p>
+      <p> Email : <span><?= $fetch_message['email']; ?></span></p>
+     
+      <p> Message : <span><?= $fetch_message['message']; ?></span></p>
       <a href="messages.php??delete=<?= $fetch_message['id']; ?>" onclick="return confirm('delete this message?');" class="delete-btn">delete</a>
       </div>
    <?php
