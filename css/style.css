@@ -7,7 +7,6 @@
     --white: #fff;
     --light-color: #666;
     --light-bg: #eee;
-    --border: .2rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -504,7 +503,6 @@ section {
     grid-template-columns: repeat(auto-fit, 33rem);
     gap: 1.5rem;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .products .box-container .box {
@@ -592,8 +590,7 @@ section {
 .form-container form {
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 1rem;
-    /* border: var(--border); */
+    border-radius: .5rem;
     box-shadow: var(--box-shadow);
     text-align: center;
     margin: 0 auto;

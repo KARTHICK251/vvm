@@ -92,50 +92,50 @@ if(isset($_POST['order'])){
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
          <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-         <div class="grand-total">grand total : <span>Rs.<?= $grand_total; ?>/-</span></div>
+         <div class="grand-total">Grand total : <span>Rs.<?= $grand_total; ?>/-</span></div>
       </div>
 
-      <h3>place your orders</h3>
+      <h3>Place your orders</h3>
 
       <div class="flex">
          <div class="inputBox">
-            <span>your name :</span>
+            <span>Your Name :</span>
             <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
          </div>
          <div class="inputBox">
-            <span>your number :</span>
+            <span>Your Number :</span>
             <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
          </div>
          <div class="inputBox">
-            <span>your email :</span>
+            <span>Your Email :</span>
             <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span><br><br>payment method : Cash on delivery</br></span>
+            <span><br><br>Payment Method : Cash on delivery</br></span>
             
          </div>
          <div class="inputBox">
-            <span>address line 01 :</span>
+            <span>Address Line 01 :</span>
             <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>address line 02 :</span>
+            <span>Address Line 02 :</span>
             <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>city :</span>
-            <input type="text" name="city" placeholder="e.g. mumbai" class="box" maxlength="50" required>
+            <span>City :</span>
+            <input type="text" name="city" placeholder="e.g. Tirupur" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
+            <span>State :</span>
+            <input type="text" name="state" placeholder="e.g. Tamilnadu" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>country :</span>
+            <span>Country :</span>
             <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>pin code :</span>
+            <span>Pin Code :</span>
             <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
          </div>
       </div>

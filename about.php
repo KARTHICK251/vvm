@@ -42,8 +42,8 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
+         <h3>Why choose us?</h3>
+         <p>Upgrade your wardrobe with our latest trends and stylish clothing. Our team of fashion experts is dedicated to bringing you the best selection of quality clothing at affordable prices. With our commitment to excellent customer service, you can shop with confidence knowing that we're here to help. From special events to everyday wear, we have the perfect outfit for any occasion. Choose us for all your clothing needs and experience the difference.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
